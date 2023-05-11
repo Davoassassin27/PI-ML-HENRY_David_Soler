@@ -1,0 +1,7 @@
+numpy
+pandas 
+locale
+ast
+fastapi
+uvicorn
+pip 
