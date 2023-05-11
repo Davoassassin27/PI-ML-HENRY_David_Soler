@@ -54,8 +54,8 @@ def retorno(pelicula:str):
     inversion= df_filtrado["budget"].sum()
     ganancia= df_filtrado["revenue"].sum()
     retorno= df_filtrado["return"].sum()
-    anio = df_filtrado["release_date"]
-    return {'pelicula':pelicula, 'inversion':str(inversion), 'ganacia':str(ganancia),'retorno':str(retorno), 'anio':str(anio)}
+    anio = pd.to_datetime(df_filtrado["release_date"]).dt.year
+    return {'pelicula':pelicula, 'inversion':str(inversion), 'ganacia':str(ganancia),'retorno':str(retorno), 'anio':str(anio.item())}
 # ML
 # @app.get('/recomendacion/{titulo}')
 # def recomendacion(titulo:str):
