@@ -10,10 +10,12 @@ app = FastAPI()
 # http://127.0.0.1:8000
 df = pd.read_csv("dataset/dataset_cleaned.csv",low_memory=False)
 
+# @app.get("/")
+# def index() :
+#     return "Hola"
 @app.get("/")
 def index() :
-    return "Hola"
-
+    pass
 @app.get('/peliculas_mes/{mes}')
 def peliculas_mes(mes:str):
     aux = df.groupby("month_name").size()
