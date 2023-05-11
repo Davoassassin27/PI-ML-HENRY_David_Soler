@@ -13,9 +13,7 @@ df = pd.read_csv("dataset/dataset_cleaned.csv",low_memory=False)
 # @app.get("/")
 # def index() :
 #     return "Hola"
-@app.get("/")
-def index() :
-    pass
+
 @app.get('/peliculas_mes/{mes}')
 def peliculas_mes(mes:str):
     aux = df.groupby("month_name").size()
