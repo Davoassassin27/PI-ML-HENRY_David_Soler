@@ -64,7 +64,7 @@ def retorno(pelicula:str):
 @app.get('/recomendacion/{titulo}')
 def recomendacion(titulo:str):
     top_n = 5
-    n = 2000
+    n = 5000
     data_subset = data.head(n)
     X = data_subset[['belongs_to_collection', 'genres', 'original_language', "popularity", "production_companies", "release_date", "runtime", "status", "vote_average", "return"]]  
     similarity_matrix = cosine_similarity(X)
