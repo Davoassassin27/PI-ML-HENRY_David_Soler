@@ -5,15 +5,12 @@ import numpy as np
 import ast
 from datetime import datetime
 import locale
+from sklearn.metrics.pairwise import cosine_similarity
 
 app = FastAPI()
 # http://127.0.0.1:8000
 df = pd.read_csv("dataset/dataset_cleaned.csv",low_memory=False)
-
-# @app.get("/")
-# def index() :
-#     return "Hola"
-
+data = pd.read_csv('dataset/dataset_ML.csv', low_memory=False) 
 @app.get('/peliculas_mes/{mes}')
 def peliculas_mes(mes:str):
     aux = df.groupby("month_name").size()
@@ -56,8 +53,16 @@ def retorno(pelicula:str):
     retorno= df_filtrado["return"].sum()
     anio = pd.to_datetime(df_filtrado["release_date"]).dt.year
     return {'pelicula':pelicula, 'inversion':str(inversion), 'ganacia':str(ganancia),'retorno':str(retorno), 'anio':str(anio.item())}
-# ML
-# @app.get('/recomendacion/{titulo}')
-# def recomendacion(titulo:str):
-#     '''Ingresas un nombre de pelicula y te recomienda las similares en una lista'''
-#     return {'lista recomendada': respuesta}
+
+@app.get('/recomendacion/{titulo}')
+def recomendacion(titulo:str):
+    top_n = 5
+    n = 25000
+    data_subset = data.head(n)
+    X = data_subset[['belongs_to_collection', 'genres', 'original_language', "popularity", "production_companies", "release_date", "runtime", "status", "vote_average", "return"]]  
+    similarity_matrix = cosine_similarity(X)
+    movie_index = data[data['title'] == titulo].index[0] 
+    movie_similarities = similarity_matrix[movie_index]
+    top_indices = movie_similarities.argsort()[-top_n-1:-1][::-1]  
+    recommendations = df.loc[top_indices,"title"]
+    return {'lista recomendada': str(recommendations.tolist())}
