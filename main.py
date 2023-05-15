@@ -15,7 +15,7 @@ app = FastAPI()
 # http://127.0.0.1:8000
 @app.get("/")
 async def root():
-    return {"message": "Hola! Esta es una API de recomendación de peliculas. Para acceder a las consultas escriba al final del link '/docs' H-API Coding! "}
+    return {"message": "Hola! Esta es una API de recomendación de peliculas. Para acceder a las consultas escriba al final del link '/docs' H-API Coding! No olvidar respetar en las consultas La primera letra con mayuscula, por ejemplo, lunes => Lunes"}
 df = pd.read_csv("dataset/dataset_cleaned.csv",low_memory=False)
 data = pd.read_csv('dataset/dataset_ML.csv', low_memory=False) 
 @app.get('/peliculas_mes/{mes}')
