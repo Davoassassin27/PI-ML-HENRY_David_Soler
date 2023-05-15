@@ -4,6 +4,7 @@
 Hola a todos! En este proyecto se va a llevar a cabo un modelo de machine learning a partir de un dataset público, lanzado en una API lista para su consumo.
 Esta API proporciona un servicio de recomendación de películas basado en un modelo de aprendizaje automático,
 Utilizando técnicas de filtrado colaborativo y similitud de contenido para sugerir películas similares a una película dada.
+Explicación en VIDEO en el siguiente link: 
 # Herramientas Utilizadas
 [![FastAPI](https://pbs.twimg.com/profile_images/1417542931209199621/fWMEIB5j_400x400.jpg)](https://fastapi.tiangolo.com/)
 [![Render](https://intellyx.com/wp-content/uploads/2019/08/Render-cloud-intellyx-BC-logo.png)](https://render.com/)
