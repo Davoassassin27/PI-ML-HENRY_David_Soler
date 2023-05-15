@@ -6,9 +6,16 @@ import ast
 from datetime import datetime
 import locale
 from sklearn.metrics.pairwise import cosine_similarity
+import sklearn 
 
 app = FastAPI()
+# @app.get("/")
+# def index():
+#     return "Hola! Esta es una API de recomendación de peliculas. Para acceder a las consultas escriba en el link /Docs"
 # http://127.0.0.1:8000
+@app.get("/")
+async def root():
+    return {"message": "Hola! Esta es una API de recomendación de peliculas. Para acceder a las consultas escriba al final del link '/docs' H-API Coding! "}
 df = pd.read_csv("dataset/dataset_cleaned.csv",low_memory=False)
 data = pd.read_csv('dataset/dataset_ML.csv', low_memory=False) 
 @app.get('/peliculas_mes/{mes}')
@@ -57,7 +64,7 @@ def retorno(pelicula:str):
 @app.get('/recomendacion/{titulo}')
 def recomendacion(titulo:str):
     top_n = 5
-    n = 25000
+    n = 2000
     data_subset = data.head(n)
     X = data_subset[['belongs_to_collection', 'genres', 'original_language', "popularity", "production_companies", "release_date", "runtime", "status", "vote_average", "return"]]  
     similarity_matrix = cosine_similarity(X)
