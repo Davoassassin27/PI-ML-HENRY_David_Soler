@@ -7,17 +7,16 @@ from datetime import datetime
 import locale
 from sklearn.metrics.pairwise import cosine_similarity
 import sklearn 
-
+#Creación de la API
 app = FastAPI()
-# @app.get("/")
-# def index():
-#     return "Hola! Esta es una API de recomendación de peliculas. Para acceder a las consultas escriba en el link /Docs"
 # http://127.0.0.1:8000
+#función de bienvenida!
 @app.get("/")
 async def root():
     return {"message": "Hola! Esta es una API de recomendación de peliculas. Para acceder a las consultas escriba al final del link '/docs' H-API Coding! No olvidar respetar en las consultas La primera letra con mayuscula, por ejemplo, lunes => Lunes"}
 df = pd.read_csv("dataset/dataset_cleaned.csv",low_memory=False)
 data = pd.read_csv('dataset/dataset_ML.csv', low_memory=False) 
+# A continuación todas las funciones de consulta de nuestra API previamente armadas en los .ipynb y con sus decoradores
 @app.get('/peliculas_mes/{mes}')
 def peliculas_mes(mes:str):
     aux = df.groupby("month_name").size()
