@@ -1,14 +1,18 @@
 # PI-ML-HENRY_David_Soler
 [![SoyHenry](https://d31uz8lwfmyn8g.cloudfront.net/Assets/logo-henry-white-lg.png)](https://www.soyhenry.com/?utm_source=google&utm_medium=cpc&utm_campaign=GADS_SEARCH_ARG_BRAND&utm_content=Brand&gad=1&gclid=Cj0KCQjwsIejBhDOARIsANYqkD2PDMJXe6nc6gp3nEu-IfS0A-qSd1E8UKSJDbwq5LQvh4YGgz4LPdgaAiqjEALw_wcB)
 # Modelo de recomendación de películas
+<p align="center">
+<img src="https://user-images.githubusercontent.com/67664604/217914153-1eb00e25-ac08-4dfa-aaf8-53c09038f082.png"  height=300>
+</p>
 Hola a todos! En este proyecto se va a llevar a cabo un modelo de machine learning a partir de un dataset público, lanzado en una API lista para su consumo.
 Esta API proporciona un servicio de recomendación de películas basado en un modelo de aprendizaje automático,
-Utilizando técnicas de filtrado colaborativo y similitud de contenido para sugerir películas similares a una película dada.
+Utilizando técnicas de filtrado colaborativo y similitud de contenido para sugerir películas similares a una película dada. La idea del proyecto es simular el rol de un ML-Ops dentro de una start-up.
 Explicación en VIDEO en el siguiente link: 
 # Herramientas Utilizadas
-[![FastAPI](https://pbs.twimg.com/profile_images/1417542931209199621/fWMEIB5j_400x400.jpg)](https://fastapi.tiangolo.com/)
+
+[![FastAPI](https://pbs.twimg.com/profile_images/1417542931209199621/fWMEIB5j_200x200.jpg)](https://fastapi.tiangolo.com/)
 [![Render](https://intellyx.com/wp-content/uploads/2019/08/Render-cloud-intellyx-BC-logo.png)](https://render.com/)
-[![Gradio](https://pbs.twimg.com/profile_images/1526964416834510848/Njy4Kh2q_400x400.jpg)](https://gradio.app/)
+[![Gradio](https://pbs.twimg.com/profile_images/1526964416834510848/Njy4Kh2q_200x200.jpg)](https://gradio.app/)
 [![Pandas](https://www.adictosaltrabajo.com/wp-content/uploads/2020/12/1200px-Pandas_logo.svg_.png)](https://pandas.pydata.org/)
 [![Sklearn](https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_77c883b19775c25838d2055fc2e7387e/scikit-learn.png)](https://scikit-learn.org/stable/#)
 ## Características
@@ -28,5 +32,5 @@ Explicación en VIDEO en el siguiente link:
 - Dataset original https://drive.google.com/file/d/1Rp7SNuoRnmdoQMa5LWXuK4i7W1ILblYb/view
 ## Autor
 - David Andrés Soler (Davoassassin27)
-- [![Linkdin](https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/LinkedIn_Logo.svg/1200px-LinkedIn_Logo.svg.png)](https://www.linkedin.com/in/david-soler-aa200b240/)
+- [![Linkdin](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Linkedin_icon.svg/256px-Linkedin_icon.svg.png)](https://www.linkedin.com/in/david-soler-aa200b240/)
 
