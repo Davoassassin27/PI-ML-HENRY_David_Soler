@@ -8,6 +8,7 @@ Hola a todos! En este proyecto se va a llevar a cabo un modelo de machine learni
 Esta API proporciona un servicio de recomendación de películas basado en un modelo de aprendizaje automático,
 Utilizando técnicas de filtrado colaborativo y similitud de contenido para sugerir películas similares a una película dada. La idea del proyecto es simular el rol de un ML-Ops dentro de una start-up.
 Explicación en VIDEO en el siguiente link: https://www.youtube.com/watch?v=z7-ZdlsnICw
+
 # Herramientas Utilizadas
 
 [![FastAPI](https://pbs.twimg.com/profile_images/1417542931209199621/fWMEIB5j_200x200.jpg)](https://fastapi.tiangolo.com/)
