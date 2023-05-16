@@ -1,9 +1,12 @@
 # PI-ML-HENRY_David_Soler
 [![SoyHenry](https://d31uz8lwfmyn8g.cloudfront.net/Assets/logo-henry-white-lg.png)](https://www.soyhenry.com/?utm_source=google&utm_medium=cpc&utm_campaign=GADS_SEARCH_ARG_BRAND&utm_content=Brand&gad=1&gclid=Cj0KCQjwsIejBhDOARIsANYqkD2PDMJXe6nc6gp3nEu-IfS0A-qSd1E8UKSJDbwq5LQvh4YGgz4LPdgaAiqjEALw_wcB)
 # Modelo de recomendación de películas
+<p align="center">
+<img src="https://user-images.githubusercontent.com/67664604/217914153-1eb00e25-ac08-4dfa-aaf8-53c09038f082.png"  height=300>
+</p>
 Hola a todos! En este proyecto se va a llevar a cabo un modelo de machine learning a partir de un dataset público, lanzado en una API lista para su consumo.
 Esta API proporciona un servicio de recomendación de películas basado en un modelo de aprendizaje automático,
-Utilizando técnicas de filtrado colaborativo y similitud de contenido para sugerir películas similares a una película dada.
+Utilizando técnicas de filtrado colaborativo y similitud de contenido para sugerir películas similares a una película dada. La idea del proyecto es simular el rol de un ML-Ops dentro de una start-up.
 Explicación en VIDEO en el siguiente link: 
 # Herramientas Utilizadas
 [![FastAPI](https://pbs.twimg.com/profile_images/1417542931209199621/fWMEIB5j_400x400.jpg)](https://fastapi.tiangolo.com/)
