@@ -7,7 +7,7 @@
 Hola a todos! En este proyecto se va a llevar a cabo un modelo de machine learning a partir de un dataset público, lanzado en una API lista para su consumo.
 Esta API proporciona un servicio de recomendación de películas basado en un modelo de aprendizaje automático,
 Utilizando técnicas de filtrado colaborativo y similitud de contenido para sugerir películas similares a una película dada. La idea del proyecto es simular el rol de un ML-Ops dentro de una start-up.
-Explicación en VIDEO en el siguiente link: 
+Explicación en VIDEO en el siguiente link: https://www.youtube.com/watch?v=z7-ZdlsnICw
 # Herramientas Utilizadas
 
 [![FastAPI](https://pbs.twimg.com/profile_images/1417542931209199621/fWMEIB5j_200x200.jpg)](https://fastapi.tiangolo.com/)
@@ -26,7 +26,8 @@ Explicación en VIDEO en el siguiente link:
 - Descargar la carpeta del repositorio y ejecutar la API de manera local (no olvides modificar la limitacion de la muestra en base a tu requisitos técnicos)
 - Si se desea solo utilizar la versión gafica de la API, seguir el siguiente link: https://huggingface.co/spaces/Davoassassin27/ML-recomendacion-peliculas-DS
 - No olvidar que TODAS LAS CONSULTAS deben ir la primera letra con mayúscula, por ejemplo, lunes => Lunes o toystory => Toy Story
-- El deploy de la App esta en render en el siguiente link: 
+- El deploy de la App esta en render en el siguiente link: https://pi-ml-henry-david-soler.onrender.com/
+- Link de api en docs : https://pi-ml-henry-david-soler.onrender.com/docs
 ## Bibliografía
 - Consignas del proyecto https://github.com/HX-PRomero/PI_ML_OPS/blob/main/Readme.md
 - Dataset original https://drive.google.com/file/d/1Rp7SNuoRnmdoQMa5LWXuK4i7W1ILblYb/view
